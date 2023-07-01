@@ -29,24 +29,26 @@ function InputArea(props) {
   }
 
   return (
-    <div className="input-area">
-      <input
-        onChange={isClicked}
-        name="title"
-        type="text"
-        placeholder="Title"
-        value={note.title}
-      />
-      <textarea
-        onChange={isClicked}
-        name="content"
-        rows="1"
-        placeholder="Take a note..."
-        value={note.content}
-      ></textarea>
-      <button onClick={onAdd} className="add-btn">
-        Add
-      </button>
+    <div className="input-container">
+      <div className="input-area">
+        <input
+          onChange={isClicked}
+          name="title"
+          type="text"
+          placeholder="Title"
+          value={note.title}
+        />
+        <textarea
+          onChange={isClicked}
+          name="content"
+          rows="1"
+          placeholder="Take a note..."
+          value={note.content}
+        ></textarea>
+        <button onClick={onAdd} className="add-btn">
+          Add
+        </button>
+      </div>
     </div>
   );
 }

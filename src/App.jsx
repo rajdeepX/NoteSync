@@ -22,8 +22,10 @@ function App() {
   }
 
   return (
-    <div>
-      <h1>NoteSync</h1>
+    <div className="main">
+      <header>
+        <h1>NoteSync</h1>
+      </header>
       <InputArea isClick={onClick} />
       <div className="notes-container">
         {notes.map((noteItem, index) => {

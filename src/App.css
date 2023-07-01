@@ -62,6 +62,7 @@ input {
 .notes-container {
   width: 90vw;
   display: flex;
+  flex-wrap: wrap;
   /* justify-content: center; */
   margin: 10px auto;
   /* flex-direction: column; */
@@ -91,4 +92,17 @@ input {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100vw;
+  }
+
+  .input-container {
+    padding: 0 28px;
+  }
+  .input-area {
+    width: 90vw;
+  }
 }
